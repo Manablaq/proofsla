@@ -1,0 +1,32 @@
+{
+  "client": "0x5bB49021001200fE8156a81c7fcF097e535e7181",
+  "client_award_wei": "0",
+  "contract_address": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+  "contract_fix_commit": "f25f126",
+  "contract_source_sha256": "7bc3b90343eacad03ec6db92fe64333f314a4bb75b85bd9a209ca1a3e1707075",
+  "corroboration_sha256": "1e0a07a6fcbde3bdbb47dbb8838eabe7424fcbba392f4b0fc6e96c0a72903d66",
+  "escrow_wei": "1000000000000000000",
+  "evidence_commit": "f79afe8fd9f8fc9005072460a055293456a46a19",
+  "evidence_observed_at": 1787328818,
+  "final_evidence_status": "CORROBORATED",
+  "final_state": "RESOLVED",
+  "final_verdict": "MET",
+  "historical_transactions": {
+    "pre_fix_deployment": "0x3a04f3c8eca9a394338a6932977a5342900395ddb17accb46f531127e7a517ab",
+    "pre_fix_failed_create_sla": "0x6ffb82a301c672794107772e98cd4ec1c4050d9fada8da55020ad8155f216a4e"
+  },
+  "network": "Bradbury Testnet",
+  "primary_sha256": "4ac304d2dcfdb30c6d2617201af955fdfa32268fc393e845753ac2d21fe990aa",
+  "provider": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider_award_wei": "1000000000000000000",
+  "provider_claimable_after_withdrawal": "0",
+  "sla_id": 1,
+  "transactions": {
+    "accept_sla": "0xccf40eebe823e153205e76e1418d940b736635a3ac76931734d5aaac394fbf2a",
+    "adjudicate": "0x23ccc795ce236bc08430292eae9b1ff6e72c6b9444a21914cb7911e297f34e39",
+    "create_sla": "0xbc5b0e5eadecf9767ddd29c3fe9c2419b99894038a1eb118b3aaa1f3b4531d20",
+    "deployment": "0xc0146846c7ff84723ba42e4cfaee3d829d5b8be1e76066c68d4dcb0c15f76228",
+    "submit_delivery_evidence": "0xe4851834b3536f527fd9312316d517a2a6961da6c202e01299a87d31a3a214bd",
+    "withdraw": "0xa04e6800ee2e64299406db7537e48e0d00ddb0a6f59a8d59de85249d09374358"
+  }
+}

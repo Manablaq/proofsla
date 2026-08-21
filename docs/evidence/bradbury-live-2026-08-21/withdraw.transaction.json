@@ -1,0 +1,81 @@
+{
+  "activator": "0x7538369A22a176afFccb6B273eedfbb92780bf22",
+  "consensus_data": {
+    "leader_receipt": null
+  },
+  "created_timestamp": "1787330056",
+  "current_timestamp": "1787332609",
+  "last_leader": "0x77a07271abB443F55be19c357AA35206BeB63E1d",
+  "last_round": {
+    "appeal_bond": "0",
+    "leader_index": "4",
+    "result": "1",
+    "rotations_left": "3",
+    "round": "0",
+    "round_validators": [
+      "0x3B940A5b4A762583453D9e9Cf0981BE0426A8e79",
+      "0xA58D6FcCD69eaafB5869dA58913f116045D75444",
+      "0x9D998aD7C7f9Cc448A4DbDf49edD7CADBe3d57B6",
+      "0x9F6aa7364D20CF25F054Ea83f3CB950317fD34b6",
+      "0x77a07271abB443F55be19c357AA35206BeB63E1d"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "validator_votes_hash": [
+      "0xcfd8e91a054470c783f9edb6b71c4e95c0c86203fe1d06515d8a6648da1ce199",
+      "0x06924999bd232c4e8d4adb83b762bdc34bd0010f448827a63e2ec3d0b1d9d52f",
+      "0x8439b19cb38280603631829cc568010ea6cfed8b367358b407b97abb908d60f9",
+      "0x91263ababc6ded02d8d18f3bfa17a8afd3c1c5fbde76854e0ee5d018e0f79290",
+      "0xafd58b6a84dab87c5d8c9f4d540c2430f4f757eed45626b3c86543fc32c47804"
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE"
+    ],
+    "votes_committed": "5",
+    "votes_revealed": "5"
+  },
+  "last_vote_timestamp": "1787330069",
+  "messages": [
+    [
+      0,
+      "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      1000000000000000000,
+      "b''",
+      false,
+      0
+    ]
+  ],
+  "num_of_initial_validators": "3",
+  "num_of_rounds": "0",
+  "queue_position": "0",
+  "queue_type": "0",
+  "random_seed": "0x6fec5860caf38102f91c9e243e3493621668dca2c57846246e0bde5ede8be0f0",
+  "read_state_block_range": {
+    "activation_block": "18448936",
+    "processing_block": "18448940",
+    "proposal_block": "18448944"
+  },
+  "recipient": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+  "result": "1",
+  "result_name": "AGREE",
+  "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "status": "7",
+  "status_name": "FINALIZED",
+  "triggered_transactions": [],
+  "tx_data": "0xd3910e066d6574686f6444776974686472617700",
+  "tx_data_decoded": null,
+  "tx_execution_result": 1,
+  "tx_execution_result_name": "FINISHED_WITH_RETURN",
+  "tx_id": "0xa04e6800ee2e64299406db7537e48e0d00ddb0a6f59a8d59de85249d09374358",
+  "tx_receipt": "0x",
+  "tx_slot": "5"
+}

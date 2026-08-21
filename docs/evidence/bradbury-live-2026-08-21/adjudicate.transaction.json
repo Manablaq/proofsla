@@ -1,0 +1,72 @@
+{
+  "activator": "0x58a7b7ac6Cb01843e4e5af117C551E59449E0F49",
+  "consensus_data": {
+    "leader_receipt": null
+  },
+  "created_timestamp": "1787329409",
+  "current_timestamp": "1787332603",
+  "last_leader": "0x27276953fa2052A5178Ae5a3D114a3DFB9A2fC98",
+  "last_round": {
+    "appeal_bond": "0",
+    "leader_index": "3",
+    "result": "1",
+    "rotations_left": "3",
+    "round": "0",
+    "round_validators": [
+      "0x77a07271abB443F55be19c357AA35206BeB63E1d",
+      "0xf5E017C93f37E3f03595C03D5A6A98396769C175",
+      "0x0c526A6af46A038E31dA21C123756Ab2D75f06Bc",
+      "0x27276953fa2052A5178Ae5a3D114a3DFB9A2fC98",
+      "0x4f36CB2C58385575fafb443d80E3c290b12DA6aE"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      3,
+      1,
+      1
+    ],
+    "validator_votes_hash": [
+      "0xa8aee8aa3d7a7657424461cfa9ce02215282024a2b546f0d92c20ff6ae9ff0a4",
+      "0x7fc90d9b14c72004db87c3e0ec500badc8c374b92bfb646005adef4ee4110f6f",
+      "0x06636fff84013cae0d6758d19f784f762ce05d016da523838d138ba2f7e42701",
+      "0xa9f25add417479b834c9cd728bd62c0c68086a4a04df31309600938119d5736c",
+      "0x977c75dce4f85f9f0ce018414783ffcaab6eee24e6303c3fac361bedb1dd0008"
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "TIMEOUT",
+      "AGREE",
+      "AGREE"
+    ],
+    "votes_committed": "5",
+    "votes_revealed": "5"
+  },
+  "last_vote_timestamp": "1787329437",
+  "messages": [],
+  "num_of_initial_validators": "3",
+  "num_of_rounds": "0",
+  "queue_position": "0",
+  "queue_type": "0",
+  "random_seed": "0xb83769eab04401d9ee06ee7d5492c02858d8681f644ac6ee2a020973840c5710",
+  "read_state_block_range": {
+    "activation_block": "18447749",
+    "processing_block": "18447777",
+    "proposal_block": "18447779"
+  },
+  "recipient": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+  "result": "1",
+  "result_name": "AGREE",
+  "sender": "0x5bB49021001200fE8156a81c7fcF097e535e7181",
+  "status": "7",
+  "status_name": "FINALIZED",
+  "triggered_transactions": [],
+  "tx_data": "0xdc9a1604617267730d09066d6574686f645461646a7564696361746500",
+  "tx_data_decoded": null,
+  "tx_execution_result": 1,
+  "tx_execution_result_name": "FINISHED_WITH_RETURN",
+  "tx_id": "0x23ccc795ce236bc08430292eae9b1ff6e72c6b9444a21914cb7911e297f34e39",
+  "tx_receipt": "0x",
+  "tx_slot": "4"
+}

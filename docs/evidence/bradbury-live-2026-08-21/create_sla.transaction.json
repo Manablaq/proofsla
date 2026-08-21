@@ -1,0 +1,72 @@
+{
+  "activator": "0x4FC292d5D255Ec8Ad4cdcd36c5E188dfEE9D160e",
+  "consensus_data": {
+    "leader_receipt": null
+  },
+  "created_timestamp": "1787327650",
+  "current_timestamp": "1787332585",
+  "last_leader": "0x27276953fa2052A5178Ae5a3D114a3DFB9A2fC98",
+  "last_round": {
+    "appeal_bond": "0",
+    "leader_index": "0",
+    "result": "1",
+    "rotations_left": "3",
+    "round": "0",
+    "round_validators": [
+      "0x27276953fa2052A5178Ae5a3D114a3DFB9A2fC98",
+      "0x3f5cAED686336ED9cF3Dede61154B0Cd67Fb9bD7",
+      "0xA58D6FcCD69eaafB5869dA58913f116045D75444",
+      "0x992E8D62263eD1Fe2E14FfB11aDf1080edBe4b5a",
+      "0xC32bD21E1506Ab4954BA1EE8FBD50271Ca61b7DE"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "validator_votes_hash": [
+      "0xce4dc5c81794d75596c261d66fcaa3fec1eb3843b15ee61c56d101834a26c138",
+      "0x56edfca54359077a0f2e898e9ea81cef029da32e23a37f92df8a41b2dfdaa963",
+      "0x7e1717ccba30a3f9fcd2a1348bdd909c39b3a33cf677466c0014671588719bd6",
+      "0x52e1a71ca643199b57e139f2b08264d2de434cebb62a199c8ee85edd50b9be59",
+      "0xe63efbc027355732d80a992ad01d3ae10efa2b836e620e85643328f33725d635"
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE"
+    ],
+    "votes_committed": "5",
+    "votes_revealed": "5"
+  },
+  "last_vote_timestamp": "1787327661",
+  "messages": [],
+  "num_of_initial_validators": "3",
+  "num_of_rounds": "0",
+  "queue_position": "0",
+  "queue_type": "0",
+  "random_seed": "0xf57252fbae6556bbe0650e81d1e62212e870352c9702e1aa8dec9d7c3e906f3c",
+  "read_state_block_range": {
+    "activation_block": "18444524",
+    "processing_block": "18444527",
+    "proposal_block": "18444529"
+  },
+  "recipient": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+  "result": "1",
+  "result_name": "AGREE",
+  "sender": "0x5bB49021001200fE8156a81c7fcF097e535e7181",
+  "status": "7",
+  "status_name": "FINALIZED",
+  "triggered_transactions": [],
+  "tx_data": "0xf8c4b8c116046172677335b1a6a4eeffcff3c99388d79ae7f4eda3ecaaa3b9eb9fe703a40250726f6f66534c412042726164627572792041504920657865637574696f6e207465737484065468652070726f7669646572206d7573742072657475726e20485454502032303020616e642074686520726573706f6e736520626f6479206d75737420636f6e7461696e2074686520657861637420746578742050524f4f46534c415f4f4b2e81f403817d81982a066d6574686f64546372656174655f736c6100",
+  "tx_data_decoded": null,
+  "tx_execution_result": 1,
+  "tx_execution_result_name": "FINISHED_WITH_RETURN",
+  "tx_id": "0xbc5b0e5eadecf9767ddd29c3fe9c2419b99894038a1eb118b3aaa1f3b4531d20",
+  "tx_receipt": "0x",
+  "tx_slot": "1"
+}

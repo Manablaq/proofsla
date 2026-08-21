@@ -1,0 +1,72 @@
+{
+  "activator": "0x7538369A22a176afFccb6B273eedfbb92780bf22",
+  "consensus_data": {
+    "leader_receipt": null
+  },
+  "created_timestamp": "1787325198",
+  "current_timestamp": "1787332632",
+  "last_leader": "0xC32bD21E1506Ab4954BA1EE8FBD50271Ca61b7DE",
+  "last_round": {
+    "appeal_bond": "0",
+    "leader_index": "2",
+    "result": "1",
+    "rotations_left": "3",
+    "round": "0",
+    "round_validators": [
+      "0x859dF0816Ed95B22B946C56dBc004b17993d1Ed6",
+      "0x9D998aD7C7f9Cc448A4DbDf49edD7CADBe3d57B6",
+      "0xC32bD21E1506Ab4954BA1EE8FBD50271Ca61b7DE",
+      "0x8E7765267023F88d4155d52F4ce2319aDDf1dc33",
+      "0x7c23E70217AB2A9E777940Eb769bA4198d1BaA61"
+    ],
+    "validator_votes": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "validator_votes_hash": [
+      "0xf082f052d92f87499699dc38386e79f927e9f87eb571f11516e1b48c5d9ec41d",
+      "0x8d175a36291cb7acce6fd0f15ed675dcc3352a47b12613ba57d42ea31eb02968",
+      "0xe09935660b20ee8b65957c7d0380923d0dc0611f9278e8f9d4e5ff7631e2622f",
+      "0x381440d2621568624256890038ae5472a85b14a7a1de355f184ba795aa0be1ed",
+      "0x3aa55478958c06aebae3d0238d9ca7cc0084f5f4f0bb1f4fdce5b389ee5a3828"
+    ],
+    "validator_votes_name": [
+      "DISAGREE",
+      "DISAGREE",
+      "DISAGREE",
+      "DISAGREE",
+      "DISAGREE"
+    ],
+    "votes_committed": "5",
+    "votes_revealed": "5"
+  },
+  "last_vote_timestamp": "1787325631",
+  "messages": [],
+  "num_of_initial_validators": "3",
+  "num_of_rounds": "0",
+  "queue_position": "0",
+  "queue_type": "0",
+  "random_seed": "0x86cf5c4717067022607252f72804f793e588652046301ffee18910ee26cbb878",
+  "read_state_block_range": {
+    "activation_block": "18440275",
+    "processing_block": "18440276",
+    "proposal_block": "18440280"
+  },
+  "recipient": "0x6446B96242B6fE3678E629a29e7b6a0A13e3511c",
+  "result": "1",
+  "result_name": "AGREE",
+  "sender": "0x5bB49021001200fE8156a81c7fcF097e535e7181",
+  "status": "7",
+  "status_name": "FINALIZED",
+  "triggered_transactions": [],
+  "tx_data": "0xf8c4b8c116046172677335b1a6a4eeffcff3c99388d79ae7f4eda3ecaaa3b9eb9fe703a40250726f6f66534c412042726164627572792041504920657865637574696f6e207465737484065468652070726f7669646572206d7573742072657475726e20485454502032303020616e642074686520726573706f6e736520626f6479206d75737420636f6e7461696e2074686520657861637420746578742050524f4f46534c415f4f4b2e81f403817d81982a066d6574686f64546372656174655f736c6100",
+  "tx_data_decoded": null,
+  "tx_execution_result": 2,
+  "tx_execution_result_name": "FINISHED_WITH_ERROR",
+  "tx_id": "0x6ffb82a301c672794107772e98cd4ec1c4050d9fada8da55020ad8155f216a4e",
+  "tx_receipt": "0x",
+  "tx_slot": "1"
+}

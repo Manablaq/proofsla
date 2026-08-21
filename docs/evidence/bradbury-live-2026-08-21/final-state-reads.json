@@ -1,0 +1,393 @@
+{
+  "calls": {
+    "client_get_claimable": {
+      "args": [
+        "0x5bB49021001200fE8156a81c7fcF097e535e7181"
+      ],
+      "decoded": 0,
+      "function_name": "get_claimable",
+      "request": {
+        "data": "0xf84bb8481604617267730dd402307835624234393032313030313230306645383135366138316337666346303937653533356537313831066d6574686f646c6765745f636c61696d61626c6500",
+        "from": "0x649A66F08a8ED05F9E9C42E7c900b530E040bFda",
+        "to": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+        "transaction_hash_variant": "latest-final",
+        "type": "read"
+      },
+      "rpc_result": {
+        "data": "01",
+        "eqOutputs": [],
+        "events": [],
+        "logs": [
+          {
+            "file": "common/src/lib.rs:111",
+            "level": "info",
+            "message": "logging initialized",
+            "target": "genvm_common",
+            "ts": "1787333835467",
+            "version": "v0.2.11-x86_64-linux-release"
+          },
+          {
+            "file": "src/exe/run.rs:150",
+            "genvm_id": "3763914",
+            "level": "info",
+            "message": "genvm id",
+            "target": "genvm::exe::run",
+            "ts": "1787333835467"
+          },
+          {
+            "default": "v0.1.0",
+            "file": "src/runners/parse.rs:88",
+            "level": "warn",
+            "message": "runner comment does not start with version, using default",
+            "target": "genvm::runners::parse",
+            "ts": "1787333835487"
+          },
+          {
+            "file": "src/lib.rs:299",
+            "level": "info",
+            "message": "metrics",
+            "metrics": {
+              "gvm": {
+                "host": {
+                  "time": 17824
+                },
+                "llm_module": {
+                  "calls": 0,
+                  "time": 0
+                },
+                "supervisor": {
+                  "compilation_time": 0,
+                  "compiled_modules": 0,
+                  "precompile_hits": 2
+                },
+                "web_module": {
+                  "calls": 0,
+                  "time": 0
+                }
+              },
+              "llm": null,
+              "web": null
+            },
+            "target": "genvm",
+            "ts": "1787333835669"
+          },
+          {
+            "file": "src/exe/run.rs:111",
+            "level": "warn",
+            "message": "sigterm received",
+            "target": "genvm::exe::run",
+            "ts": "1787333835670"
+          }
+        ],
+        "messages": [],
+        "nondetDisagreementCallNo": null,
+        "status": {
+          "code": 0,
+          "message": "success"
+        },
+        "stderr": "",
+        "stdout": "",
+        "syncedBlock": "0x1199fda"
+      }
+    },
+    "get_sla": {
+      "args": [
+        1
+      ],
+      "decoded": {
+        "accepted_at": "2026-08-21T16:02:07+00:00",
+        "client": "addr#5bb49021001200fe8156a81c7fcf097e535e7181",
+        "client_award": 0,
+        "completed_at": "2026-08-21T16:18:44+00:00",
+        "corroboration_sha256": "1e0a07a6fcbde3bdbb47dbb8838eabe7424fcbba392f4b0fc6e96c0a72903d66",
+        "corroboration_url": "https://raw.githubusercontent.com/Manablaq/proofsla/f79afe8fd9f8fc9005072460a055293456a46a19/evidence/corroboration-proofsla-bradbury-001.txt",
+        "created_at": "2026-08-21T15:54:10+00:00",
+        "escrow_amount": 1000000000000000000,
+        "evidence_observed_at": 1787328818,
+        "evidence_status": "CORROBORATED",
+        "major_provider_bps": 2000,
+        "max_evidence_age_seconds": 86400,
+        "minor_provider_bps": 8000,
+        "primary_evidence_sha256": "4ac304d2dcfdb30c6d2617201af955fdfa32268fc393e845753ac2d21fe990aa",
+        "primary_evidence_url": "https://raw.githubusercontent.com/Manablaq/proofsla/f79afe8fd9f8fc9005072460a055293456a46a19/evidence/primary-proofsla-bradbury-001.txt",
+        "provider": "addr#f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "provider_award": 1000000000000000000,
+        "reason": "Both evidence records refer to the same run ID and report HTTP status 200 with response body exactly PROOFSLA_OK, satisfying the SLA.",
+        "requirements": "The provider must return HTTP 200 and the response body must contain the exact text PROOFSLA_OK.",
+        "resolved_at": "2026-08-21T16:23:29+00:00",
+        "service_description": "ProofSLA Bradbury API execution test",
+        "state": "RESOLVED",
+        "verdict": "MET"
+      },
+      "function_name": "get_sla",
+      "request": {
+        "data": "0xd9971604617267730d09066d6574686f643c6765745f736c6100",
+        "from": "0x649A66F08a8ED05F9E9C42E7c900b530E040bFda",
+        "to": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+        "transaction_hash_variant": "latest-final",
+        "type": "read"
+      },
+      "rpc_result": {
+        "data": "be010b61636365707465645f6174cc01323032362d30382d32315431363a30323a30372b30303a303006636c69656e74185bb49021001200fe8156a81c7fcf097e535e71810c636c69656e745f6177617264010c636f6d706c657465645f6174cc01323032362d30382d32315431363a31383a34342b30303a303014636f72726f626f726174696f6e5f73686132353684043165306130376136666362646533626462623437646262383833386561626537343234666362626133393266346230666336653936633061373239303364363611636f72726f626f726174696f6e5f75726cec0868747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4d616e61626c61712f70726f6f66736c612f663739616665386664396638666339303035303732343630613035353239333435366134366131392f65766964656e63652f636f72726f626f726174696f6e2d70726f6f66736c612d62726164627572792d3030312e7478740a637265617465645f6174cc01323032362d30382d32315431353a35343a31302b30303a30300d657363726f775f616d6f756e74818080d9d3b3ed826f1465766964656e63655f6f627365727665645f617491938fa2350f65766964656e63655f73746174757364434f52524f424f5241544544126d616a6f725f70726f76696465725f627073817d186d61785f65766964656e63655f6167655f7365636f6e647381982a126d696e6f725f70726f76696465725f62707381f403177072696d6172795f65766964656e63655f736861323536840434616333303464326463666462333063366432363137323031616639353566646661333232363866633339336538343537353361633264323166653939306161147072696d6172795f65766964656e63655f75726cbc0868747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4d616e61626c61712f70726f6f66736c612f663739616665386664396638666339303035303732343630613035353239333435366134366131392f65766964656e63652f7072696d6172792d70726f6f66736c612d62726164627572792d3030312e7478740870726f766964657218f39fd6e51aad88f6f4ce6ab8827279cfffb922660e70726f76696465725f6177617264818080d9d3b3ed826f06726561736f6eac08426f74682065766964656e6365207265636f72647320726566657220746f207468652073616d652072756e20494420616e64207265706f727420485454502073746174757320323030207769746820726573706f6e736520626f64792065786163746c792050524f4f46534c415f4f4b2c2073617469736679696e672074686520534c412e0c726571756972656d656e747384065468652070726f7669646572206d7573742072657475726e20485454502032303020616e642074686520726573706f6e736520626f6479206d75737420636f6e7461696e2074686520657861637420746578742050524f4f46534c415f4f4b2e0b7265736f6c7665645f6174cc01323032362d30382d32315431363a32333a32392b30303a303013736572766963655f6465736372697074696f6ea40250726f6f66534c412042726164627572792041504920657865637574696f6e2074657374057374617465445245534f4c56454407766572646963741c4d4554",
+        "eqOutputs": [],
+        "events": [],
+        "logs": [
+          {
+            "file": "common/src/lib.rs:111",
+            "level": "info",
+            "message": "logging initialized",
+            "target": "genvm_common",
+            "ts": "1787333830991",
+            "version": "v0.2.11-x86_64-linux-release"
+          },
+          {
+            "file": "src/exe/run.rs:150",
+            "genvm_id": "3763908",
+            "level": "info",
+            "message": "genvm id",
+            "target": "genvm::exe::run",
+            "ts": "1787333830991"
+          },
+          {
+            "default": "v0.1.0",
+            "file": "src/runners/parse.rs:88",
+            "level": "warn",
+            "message": "runner comment does not start with version, using default",
+            "target": "genvm::runners::parse",
+            "ts": "1787333831044"
+          },
+          {
+            "file": "src/lib.rs:299",
+            "level": "info",
+            "message": "metrics",
+            "metrics": {
+              "gvm": {
+                "host": {
+                  "time": 60361
+                },
+                "llm_module": {
+                  "calls": 0,
+                  "time": 0
+                },
+                "supervisor": {
+                  "compilation_time": 0,
+                  "compiled_modules": 0,
+                  "precompile_hits": 2
+                },
+                "web_module": {
+                  "calls": 0,
+                  "time": 0
+                }
+              },
+              "llm": null,
+              "web": null
+            },
+            "target": "genvm",
+            "ts": "1787333831377"
+          },
+          {
+            "file": "src/exe/run.rs:111",
+            "level": "warn",
+            "message": "sigterm received",
+            "target": "genvm::exe::run",
+            "ts": "1787333831378"
+          }
+        ],
+        "messages": [],
+        "nondetDisagreementCallNo": null,
+        "status": {
+          "code": 0,
+          "message": "success"
+        },
+        "stderr": "",
+        "stdout": "",
+        "syncedBlock": "0x1199fd1"
+      }
+    },
+    "get_sla_count": {
+      "args": [],
+      "decoded": 1,
+      "function_name": "get_sla_count",
+      "request": {
+        "data": "0xd8960e066d6574686f646c6765745f736c615f636f756e7400",
+        "from": "0x649A66F08a8ED05F9E9C42E7c900b530E040bFda",
+        "to": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+        "transaction_hash_variant": "latest-final",
+        "type": "read"
+      },
+      "rpc_result": {
+        "data": "09",
+        "eqOutputs": [],
+        "events": [],
+        "logs": [
+          {
+            "file": "common/src/lib.rs:111",
+            "level": "info",
+            "message": "logging initialized",
+            "target": "genvm_common",
+            "ts": "1787333832709",
+            "version": "v0.2.11-x86_64-linux-release"
+          },
+          {
+            "file": "src/exe/run.rs:150",
+            "genvm_id": "3763910",
+            "level": "info",
+            "message": "genvm id",
+            "target": "genvm::exe::run",
+            "ts": "1787333832710"
+          },
+          {
+            "default": "v0.1.0",
+            "file": "src/runners/parse.rs:88",
+            "level": "warn",
+            "message": "runner comment does not start with version, using default",
+            "target": "genvm::runners::parse",
+            "ts": "1787333832728"
+          },
+          {
+            "file": "src/lib.rs:299",
+            "level": "info",
+            "message": "metrics",
+            "metrics": {
+              "gvm": {
+                "host": {
+                  "time": 16222
+                },
+                "llm_module": {
+                  "calls": 0,
+                  "time": 0
+                },
+                "supervisor": {
+                  "compilation_time": 0,
+                  "compiled_modules": 0,
+                  "precompile_hits": 2
+                },
+                "web_module": {
+                  "calls": 0,
+                  "time": 0
+                }
+              },
+              "llm": null,
+              "web": null
+            },
+            "target": "genvm",
+            "ts": "1787333832909"
+          },
+          {
+            "file": "src/exe/run.rs:111",
+            "level": "warn",
+            "message": "sigterm received",
+            "target": "genvm::exe::run",
+            "ts": "1787333832909"
+          }
+        ],
+        "messages": [],
+        "nondetDisagreementCallNo": null,
+        "status": {
+          "code": 0,
+          "message": "success"
+        },
+        "stderr": "",
+        "stdout": "",
+        "syncedBlock": "0x1199fd3"
+      }
+    },
+    "provider_get_claimable": {
+      "args": [
+        "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      ],
+      "decoded": 0,
+      "function_name": "get_claimable",
+      "request": {
+        "data": "0xf84bb8481604617267730dd402307866333946643665353161616438384636463463653661423838323732373963666646623932323636066d6574686f646c6765745f636c61696d61626c6500",
+        "from": "0x649A66F08a8ED05F9E9C42E7c900b530E040bFda",
+        "to": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+        "transaction_hash_variant": "latest-final",
+        "type": "read"
+      },
+      "rpc_result": {
+        "data": "01",
+        "eqOutputs": [],
+        "events": [],
+        "logs": [
+          {
+            "file": "common/src/lib.rs:111",
+            "level": "info",
+            "message": "logging initialized",
+            "target": "genvm_common",
+            "ts": "1787333834101",
+            "version": "v0.2.11-x86_64-linux-release"
+          },
+          {
+            "file": "src/exe/run.rs:150",
+            "genvm_id": "3763912",
+            "level": "info",
+            "message": "genvm id",
+            "target": "genvm::exe::run",
+            "ts": "1787333834101"
+          },
+          {
+            "default": "v0.1.0",
+            "file": "src/runners/parse.rs:88",
+            "level": "warn",
+            "message": "runner comment does not start with version, using default",
+            "target": "genvm::runners::parse",
+            "ts": "1787333834119"
+          },
+          {
+            "file": "src/lib.rs:299",
+            "level": "info",
+            "message": "metrics",
+            "metrics": {
+              "gvm": {
+                "host": {
+                  "time": 16462
+                },
+                "llm_module": {
+                  "calls": 0,
+                  "time": 0
+                },
+                "supervisor": {
+                  "compilation_time": 0,
+                  "compiled_modules": 0,
+                  "precompile_hits": 2
+                },
+                "web_module": {
+                  "calls": 0,
+                  "time": 0
+                }
+              },
+              "llm": null,
+              "web": null
+            },
+            "target": "genvm",
+            "ts": "1787333834304"
+          },
+          {
+            "file": "src/exe/run.rs:111",
+            "level": "warn",
+            "message": "sigterm received",
+            "target": "genvm::exe::run",
+            "ts": "1787333834304"
+          }
+        ],
+        "messages": [],
+        "nondetDisagreementCallNo": null,
+        "status": {
+          "code": 0,
+          "message": "success"
+        },
+        "stderr": "",
+        "stdout": "",
+        "syncedBlock": "0x1199fd7"
+      }
+    }
+  },
+  "contract_address": "0xae2D66829A07B6B9FD8191f6977C7a36E91B36C8",
+  "network": "Bradbury Testnet",
+  "read_caller": "0x649A66F08a8ED05F9E9C42E7c900b530E040bFda",
+  "read_caller_note": "Ephemeral local account used only as caller context for read-only gen_call.",
+  "sdk_wrapper_note": "Pinned genlayer-py read_contract wrapper expected gen_call result to be a string. Bradbury returned a structured result object. This capture reuses the pinned SDK calldata encoder, serializer, provider and calldata decoder while extracting result.data from that structured object.",
+  "sla_id": 1,
+  "transaction_hash_variant": "latest-final"
+}

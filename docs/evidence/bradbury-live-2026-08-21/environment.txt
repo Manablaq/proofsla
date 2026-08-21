@@ -1,0 +1,22 @@
+ProofSLA Bradbury verification environment
+
+Git branch:
+fix/bradbury-address-calldata
+
+Git HEAD:
+f79afe8fd9f8fc9005072460a055293456a46a19
+
+Python:
+Python 3.12.14
+
+Contract SHA-256:
+7bc3b90343eacad03ec6db92fe64333f314a4bb75b85bd9a209ca1a3e1707075  contracts/proofsla.py
+
+requirements-dev.txt SHA-256:
+c57433bd2ecb9862bf56b972382a3c6b01b00903497384c76d7cfe74a4853b0b  requirements-dev.txt
+
+Relevant installed packages:
+genlayer-py @ git+https://github.com/genlayerlabs/genlayer-py@a3dc35e04898e3889cbfa855bcaf7d2664675b8f
+genlayer-test @ git+https://github.com/genlayerlabs/genlayer-testing-suite@9c09578b143905471fb0657dd53bdaf18da8e35f
+genvm-linter @ git+https://github.com/genlayerlabs/genvm-linter@fa4a4d4536b28fdc2730e13a983ba01b69ccc6f3
+pytest==8.4.2

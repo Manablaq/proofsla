@@ -1,0 +1,65 @@
+{
+  "eq_outputs": [],
+  "genvm_log": [
+    {
+      "file": "common/src/lib.rs:111",
+      "level": "info",
+      "message": "logging initialized",
+      "target": "genvm_common",
+      "ts": "1787325634664",
+      "version": "v0.2.11-x86_64-linux-release"
+    },
+    {
+      "file": "src/exe/run.rs:150",
+      "genvm_id": "3751795",
+      "level": "info",
+      "message": "genvm id",
+      "target": "genvm::exe::run",
+      "ts": "1787325634668"
+    },
+    {
+      "default": "v0.1.0",
+      "file": "src/runners/parse.rs:88",
+      "level": "warn",
+      "message": "runner comment does not start with version, using default",
+      "target": "genvm::runners::parse",
+      "ts": "1787325634808"
+    },
+    {
+      "file": "src/lib.rs:299",
+      "level": "info",
+      "message": "metrics",
+      "metrics": {
+        "gvm": {
+          "host": {
+            "time": 137786
+          },
+          "llm_module": {
+            "calls": 0,
+            "time": 0
+          },
+          "supervisor": {
+            "compilation_time": 0,
+            "compiled_modules": 0,
+            "precompile_hits": 2
+          },
+          "web_module": {
+            "calls": 0,
+            "time": 0
+          }
+        },
+        "llm": null,
+        "web": null
+      },
+      "target": "genvm",
+      "ts": "1787325635222"
+    }
+  ],
+  "result_code": 2,
+  "return_data": "0x2e04646174615c657869745f636f64652031066576656e7473050b66696e6765727072696e7416066672616d657315160466756e63e1070b6d6f64756c655f6e616d653c63707974686f6e160466756e63b9070b6d6f64756c655f6e616d653c63707974686f6e106d6f64756c655f696e7374616e636573160763707974686f6e0e086d656d6f726965730d8302dc887f277942c94bb8ad7a2774bf85ed262ec3b3cd451550b84501855dcd874c09736f6674666c6f61740e086d656d6f726965730d8302fc9e4fa3448da50dc6ff514aba0568ba045276f58d3c60fdf4c5c3d28b16acc8046b696e643c566d4572726f720f73746f726167655f6368616e6765730d15a302372d46c3ada9f897c74d349bbfe0e450c798167c9f580f8daf85def57e96c3ea00000000830400000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "run_time": "0s",
+  "stderr": "Traceback (most recent call last):\n  File \"/py/libs/_genlayer_runner.py\", line 180, in <module>\n    _handle_main()\n    ~~~~~~~~~~~~^^\n  File \"/py/libs/_genlayer_runner.py\", line 170, in _handle_main\n    _give_result(\n    ~~~~~~~~~~~~^\n    \tlambda: meth2call(contract_instance, *cd.get('args', []), **cd.get('kwargs', {}))\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/py/libs/_genlayer_runner.py\", line 65, in _give_result\n    res = res_fn()\n  File \"/py/libs/_genlayer_runner.py\", line 171, in <lambda>\n    lambda: meth2call(contract_instance, *cd.get('args', []), **cd.get('kwargs', {}))\n            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/contract.py\", line 113, in create_sla\n    self.slas[sla_id] = SLA(\n                        ~~~^\n        client=gl.message.sender_address,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<21 lines>...\n        reason=\"\",\n        ^^^^^^^^^^\n    )\n    ^\n  File \"/py/libs/genlayer/py/storage/_internal/generate.py\", line 383, in new_init_no_generic\n    old_init(self, *args, **kwargs)\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in __init__\n  File \"/py/libs/genlayer/py/storage/_internal/generate.py\", line 349, in setter\n    prop_desc.set(s._storage_slot, s._off + off, v)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/py/libs/genlayer/py/storage/_internal/desc_base_types.py\", line 88, in set\n    slot.write(off, memoryview(val.as_bytes))\n                               ^^^^^^^^^^^^\nAttributeError: 'int' object has no attribute 'as_bytes'. Did you mean: 'to_bytes'?\n",
+  "stdout": "",
+  "storage_proof": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "transaction_id": "0x6ffb82a301c672794107772e98cd4ec1c4050d9fada8da55020ad8155f216a4e"
+}

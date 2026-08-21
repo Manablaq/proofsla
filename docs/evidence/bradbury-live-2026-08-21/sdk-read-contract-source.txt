@@ -1,0 +1,43 @@
+===== MODULE FILE =====
+/Users/mralbert/Downloads/proofsla/.venv/lib/python3.12/site-packages/genlayer_py/contracts/actions.py
+
+===== PINNED read_contract IMPLEMENTATION =====
+def read_contract(
+    self: GenLayerClient,
+    address: Union[Address, ChecksumAddress],
+    function_name: str,
+    args: Optional[List[CalldataEncodable]] = None,
+    kwargs: Optional[Dict[str, CalldataEncodable]] = None,
+    account: Optional[LocalAccount] = None,
+    raw_return: bool = False,
+    transaction_hash_variant: TransactionHashVariant = TransactionHashVariant.LATEST_NONFINAL,
+    sim_config: Optional[SimConfig] = None,
+) -> CalldataEncodable:
+    if account is None and self.local_account is None:
+        raise GenLayerError("No account provided and no account is connected")
+    sender_address = self.local_account.address
+    data = [
+        calldata.encode(
+            make_calldata_object(method=function_name, args=args, kwargs=kwargs)
+        ),
+        b"\x00",
+    ]
+    serialized_data = serialize(data)
+    request_params = {
+        "type": "read",
+        "to": address,
+        "from": sender_address,
+        "data": serialized_data,
+        "transaction_hash_variant": transaction_hash_variant.value,
+    }
+    if sim_config is not None:
+        request_params["sim_config"] = sim_config
+    enc_result = self.provider.make_request(
+        method="gen_call",
+        params=[request_params],
+    )["result"]
+    prefixed_result = "0x" + enc_result
+    if raw_return:
+        return prefixed_result
+    result = calldata.decode(eth_utils.hexadecimal.decode_hex(prefixed_result))
+    return result

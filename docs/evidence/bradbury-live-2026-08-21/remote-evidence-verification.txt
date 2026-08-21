@@ -1,0 +1,13 @@
+ProofSLA Bradbury remote evidence verification
+
+Primary URL:
+https://raw.githubusercontent.com/Manablaq/proofsla/f79afe8fd9f8fc9005072460a055293456a46a19/evidence/primary-proofsla-bradbury-001.txt
+
+Primary SHA-256:
+4ac304d2dcfdb30c6d2617201af955fdfa32268fc393e845753ac2d21fe990aa  -
+
+Corroboration URL:
+https://raw.githubusercontent.com/Manablaq/proofsla/f79afe8fd9f8fc9005072460a055293456a46a19/evidence/corroboration-proofsla-bradbury-001.txt
+
+Corroboration SHA-256:
+1e0a07a6fcbde3bdbb47dbb8838eabe7424fcbba392f4b0fc6e96c0a72903d66  -

@@ -1,0 +1,65 @@
+{
+  "eq_outputs": [],
+  "genvm_log": [
+    {
+      "file": "common/src/lib.rs:111",
+      "level": "info",
+      "message": "logging initialized",
+      "target": "genvm_common",
+      "ts": "1787330070287",
+      "version": "v0.2.11-x86_64-linux-release"
+    },
+    {
+      "file": "src/exe/run.rs:150",
+      "genvm_id": "3758574",
+      "level": "info",
+      "message": "genvm id",
+      "target": "genvm::exe::run",
+      "ts": "1787330070287"
+    },
+    {
+      "default": "v0.1.0",
+      "file": "src/runners/parse.rs:88",
+      "level": "warn",
+      "message": "runner comment does not start with version, using default",
+      "target": "genvm::runners::parse",
+      "ts": "1787330070311"
+    },
+    {
+      "file": "src/lib.rs:299",
+      "level": "info",
+      "message": "metrics",
+      "metrics": {
+        "gvm": {
+          "host": {
+            "time": 85385
+          },
+          "llm_module": {
+            "calls": 0,
+            "time": 0
+          },
+          "supervisor": {
+            "compilation_time": 0,
+            "compiled_modules": 0,
+            "precompile_hits": 2
+          },
+          "web_module": {
+            "calls": 0,
+            "time": 0
+          }
+        },
+        "llm": null,
+        "web": null
+      },
+      "target": "genvm",
+      "ts": "1787330070557"
+    }
+  ],
+  "result_code": 0,
+  "return_data": "0x2e046461746100066576656e7473050b66696e6765727072696e7416066672616d657375160466756e6391080b6d6f64756c655f6e616d653c63707974686f6e160466756e63e184070b6d6f64756c655f6e616d653c63707974686f6e160466756e6391ff050b6d6f64756c655f6e616d653c63707974686f6e160466756e63d1ff050b6d6f64756c655f6e616d653c63707974686f6e160466756e63d184060b6d6f64756c655f6e616d653c63707974686f6e160466756e63c184060b6d6f64756c655f6e616d653c63707974686f6e160466756e63c9be070b6d6f64756c655f6e616d653c63707974686f6e160466756e63c1be070b6d6f64756c655f6e616d653c63707974686f6e160466756e6399be070b6d6f64756c655f6e616d653c63707974686f6e160466756e6381be070b6d6f64756c655f6e616d653c63707974686f6e160466756e63e9f7060b6d6f64756c655f6e616d653c63707974686f6e160466756e63d1f7060b6d6f64756c655f6e616d653c63707974686f6e160466756e63f9bd070b6d6f64756c655f6e616d653c63707974686f6e160466756e63b9070b6d6f64756c655f6e616d653c63707974686f6e106d6f64756c655f696e7374616e636573160763707974686f6e0e086d656d6f726965730d83028fc327e6155c1b1f809f50795706a2feee59fb7f6a3a3f5c01291810a6c8279d09736f6674666c6f61740e086d656d6f726965730d8302fc9e4fa3448da50dc6ff514aba0568ba045276f58d3c60fdf4c5c3d28b16acc8046b696e643452657475726e0f73746f726167655f6368616e6765730d15a302d4be6ca2e752370df7c22f9f40bc7cddfdc82522d30c65ba40c607ec0683ba12000000008304f39fd6e51aad88f6f4ce6ab8827279cfffb9226600000000000000000000000000000000000000000000000000000000000000000200000000000000ff5bb490",
+  "run_time": "0s",
+  "stderr": "",
+  "stdout": "",
+  "storage_proof": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "transaction_id": "0xa04e6800ee2e64299406db7537e48e0d00ddb0a6f59a8d59de85249d09374358"
+}
