@@ -1,0 +1,5 @@
+ProofSLA Bradbury Service Run
+Run ID: proofsla-bradbury-001
+Observed HTTP status: 200
+Observed response body: PROOFSLA_OK
+Corroboration: The observed API execution satisfied the recorded success condition.
