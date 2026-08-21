@@ -1,0 +1,10 @@
+ProofSLA frontend Bradbury corroboration record
+record_type=corroboration
+sla_id=3
+run_id=proofsla-frontend-003
+observed_at=2026-08-21T22:18:00Z
+verification=secondary_observation
+http_status=200
+response_body=PROOFSLA_FRONTEND_OK
+result=success
+note=Corroborating evidence for the same ProofSLA frontend test run.

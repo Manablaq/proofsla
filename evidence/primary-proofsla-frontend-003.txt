@@ -1,0 +1,9 @@
+ProofSLA frontend Bradbury evidence record
+record_type=primary
+sla_id=3
+run_id=proofsla-frontend-003
+observed_at=2026-08-21T22:18:00Z
+http_status=200
+response_body=PROOFSLA_FRONTEND_OK
+result=success
+note=Primary execution evidence for the ProofSLA frontend Bradbury API execution test v2.
