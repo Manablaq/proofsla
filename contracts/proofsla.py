@@ -91,6 +91,11 @@ class ProofSLA(gl.Contract):
         major_provider_bps: u256,
         max_evidence_age_seconds: u256,
     ) -> u256:
+        # Bradbury/Studio can surface an Address calldata argument as its
+        # integer representation. Normalize it before authorization checks
+        # and before persisting it into Address-typed storage.
+        provider = self._normalize_address(provider)
+
         if gl.message.value == u256(0):
             raise gl.vm.UserError("escrow must be greater than zero")
         if provider == gl.message.sender_address:
@@ -248,11 +253,28 @@ class ProofSLA(gl.Contract):
 
     @gl.public.view
     def get_claimable(self, account: Address) -> u256:
-        return self.claimable.get(account, u256(0))
+        return self.claimable.get(self._normalize_address(account), u256(0))
 
     @gl.public.view
     def get_sla_count(self) -> u256:
         return self.next_sla_id - u256(1)
+
+    def _normalize_address(self, value: typing.Any) -> Address:
+        if isinstance(value, Address):
+            return value
+
+        if isinstance(value, int):
+            if value < 0 or value >= (1 << 160):
+                raise gl.vm.UserError("invalid address integer")
+            return Address(value.to_bytes(20, "big"))
+
+        if isinstance(value, str):
+            return Address(value)
+
+        if isinstance(value, bytes):
+            return Address(value)
+
+        raise gl.vm.UserError("invalid address representation")
 
     def _require_sla(self, sla_id: u256) -> SLA:
         if sla_id == u256(0) or sla_id >= self.next_sla_id:
