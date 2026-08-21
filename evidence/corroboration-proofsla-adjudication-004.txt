@@ -1,0 +1,10 @@
+ProofSLA Bradbury validator adjudication corroboration record
+record_type=corroboration
+sla_id=4
+run_id=proofsla-adjudication-004
+observed_at=2026-08-21T22:50:00Z
+verification=secondary_observation
+http_status=200
+response_body=PROOFSLA_ADJUDICATION_OK
+result=success
+note=Corroborating evidence for the same ProofSLA validator adjudication test run.

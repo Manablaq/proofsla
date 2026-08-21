@@ -1,0 +1,9 @@
+ProofSLA Bradbury validator adjudication evidence record
+record_type=primary
+sla_id=4
+run_id=proofsla-adjudication-004
+observed_at=2026-08-21T22:50:00Z
+http_status=200
+response_body=PROOFSLA_ADJUDICATION_OK
+result=success
+note=Primary execution evidence for the ProofSLA Bradbury validator adjudication test.
