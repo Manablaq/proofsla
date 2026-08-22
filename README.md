@@ -149,7 +149,7 @@ or infrastructure independence. See [Security Model](docs/SECURITY_MODEL.md).
 flowchart LR
     U[Client / Provider] --> UI[Next.js frontend]
     UI --> W[Injected wallet]
-    UI --> API[/api/proofsla/dashboard]
+    UI --> API["/api/proofsla/dashboard"]
     W --> GL[GenLayer Bradbury]
     API --> SDK[genlayer-js read client]
     SDK --> GL
