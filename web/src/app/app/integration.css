@@ -1,0 +1,128 @@
+.proofsla-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  padding: 1rem;
+  background: color-mix(in oklab, var(--foreground) 22%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.proofsla-modal-panel {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  background: var(--card);
+  color: var(--card-foreground);
+  box-shadow: 0 30px 90px rgba(4, 8, 24, 0.22);
+}
+
+.proofsla-action-primary,
+.proofsla-action-secondary {
+  display: inline-flex;
+  min-height: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 0.95rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  transition:
+    transform 160ms ease,
+    opacity 160ms ease,
+    background 160ms ease;
+}
+
+.proofsla-action-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.proofsla-action-secondary {
+  border: 1px solid var(--border);
+  background: var(--background);
+}
+
+.proofsla-action-primary:hover:not(:disabled),
+.proofsla-action-secondary:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.proofsla-action-primary:disabled,
+.proofsla-action-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.proofsla-state-badge {
+  border-radius: 999px;
+  padding: 0.28rem 0.6rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.proofsla-state-created {
+  background: color-mix(in oklab, var(--muted) 92%, transparent);
+  color: var(--muted-foreground);
+}
+
+.proofsla-state-active {
+  background: color-mix(in oklab, var(--primary) 12%, transparent);
+  color: var(--primary);
+}
+
+.proofsla-state-completed {
+  background: color-mix(in oklab, #d97706 12%, transparent);
+  color: #b45309;
+}
+
+.dark .proofsla-state-completed {
+  color: #fbbf24;
+}
+
+.proofsla-state-resolved {
+  background: color-mix(in oklab, var(--success) 12%, transparent);
+  color: var(--success);
+}
+
+.proofsla-state-cancelled {
+  background: color-mix(in oklab, var(--destructive) 11%, transparent);
+  color: var(--destructive);
+}
+
+.proofsla-tx-awaiting_signature {
+  background: #f59e0b;
+}
+
+.proofsla-tx-submitted {
+  background: var(--primary);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 12%, transparent);
+}
+
+.proofsla-tx-accepted {
+  background: #0ea5e9;
+}
+
+.proofsla-tx-finalized {
+  background: var(--success);
+}
+
+.proofsla-tx-failed {
+  background: var(--destructive);
+}
+
+@media (max-width: 640px) {
+  .proofsla-modal-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .proofsla-modal-panel {
+    max-width: none !important;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+}

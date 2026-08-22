@@ -1,0 +1,236 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-instrument-serif);
+  --radius-sm: calc(var(--radius) * 0.65);
+  --radius-md: calc(var(--radius) * 0.82);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.35);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.35);
+}
+
+:root {
+  --background: oklch(0.985 0.008 275);
+  --foreground: oklch(0.17 0.025 275);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.17 0.025 275);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.17 0.025 275);
+  --primary: oklch(0.56 0.23 278);
+  --primary-foreground: oklch(0.99 0.005 275);
+  --secondary: oklch(0.95 0.018 275);
+  --secondary-foreground: oklch(0.23 0.035 275);
+  --muted: oklch(0.955 0.012 275);
+  --muted-foreground: oklch(0.5 0.035 275);
+  --accent: oklch(0.93 0.035 275);
+  --accent-foreground: oklch(0.23 0.04 275);
+  --destructive: oklch(0.61 0.22 26);
+  --border: oklch(0.89 0.018 275);
+  --input: oklch(0.89 0.018 275);
+  --ring: oklch(0.56 0.23 278);
+  --success: oklch(0.61 0.16 153);
+  --radius: 0.9rem;
+}
+
+.dark {
+  --background: oklch(0.125 0.024 275);
+  --foreground: oklch(0.96 0.012 275);
+  --card: oklch(0.165 0.027 275);
+  --card-foreground: oklch(0.96 0.012 275);
+  --popover: oklch(0.17 0.03 275);
+  --popover-foreground: oklch(0.96 0.012 275);
+  --primary: oklch(0.68 0.205 278);
+  --primary-foreground: oklch(0.12 0.025 275);
+  --secondary: oklch(0.21 0.035 275);
+  --secondary-foreground: oklch(0.95 0.012 275);
+  --muted: oklch(0.205 0.03 275);
+  --muted-foreground: oklch(0.69 0.035 275);
+  --accent: oklch(0.235 0.055 275);
+  --accent-foreground: oklch(0.96 0.012 275);
+  --destructive: oklch(0.67 0.19 24);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.68 0.205 278);
+  --success: oklch(0.72 0.16 153);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-manrope), sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-width: 320px;
+    font-family: var(--font-manrope), sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 28%, transparent);
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.hero-grid {
+  background:
+    radial-gradient(
+      circle at 18% 18%,
+      color-mix(in oklab, var(--primary) 10%, transparent),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 82% 24%,
+      color-mix(in oklab, var(--primary) 13%, transparent),
+      transparent 30%
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--background) 96%, transparent),
+      var(--background)
+    );
+  mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
+}
+
+.hero-glow {
+  background:
+    radial-gradient(
+      ellipse at center,
+      color-mix(in oklab, var(--primary) 20%, transparent),
+      transparent 62%
+    );
+  opacity: 0.78;
+}
+
+.premium-panel {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--primary) 24%, transparent),
+    color-mix(in oklab, var(--border) 55%, transparent)
+  );
+}
+
+.security-panel {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(116, 105, 255, 0.32), transparent 28%),
+    linear-gradient(135deg, #15132b 0%, #1d1a42 52%, #10101f 100%);
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32 lg:px-10;
+}
+
+.section-heading {
+  @apply mx-auto max-w-3xl text-center;
+}
+
+.section-heading h2,
+.section-title {
+  @apply mt-4 text-balance text-4xl font-extrabold leading-[1.02] tracking-[-0.055em] md:text-6xl;
+}
+
+.section-heading p:last-child,
+.section-copy {
+  @apply mt-6 text-pretty text-base font-medium leading-8 text-muted-foreground md:text-lg;
+}
+
+.eyebrow {
+  @apply text-[11px] font-extrabold uppercase tracking-[0.15em] text-primary;
+}
+
+.feature-card {
+  @apply h-full rounded-3xl border border-border/70 bg-card/70 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-lg;
+}
+
+.feature-card h3 {
+  @apply mt-5 text-lg font-extrabold tracking-[-0.025em];
+}
+
+.feature-card p {
+  @apply mt-2 text-sm font-medium leading-7 text-muted-foreground;
+}
+
+.feature-icon {
+  @apply grid size-11 place-items-center rounded-2xl bg-primary/10 text-primary;
+}
+
+.metric-card {
+  @apply flex items-center gap-3 rounded-2xl border border-border/60 bg-background/65 p-4;
+}
+
+.metric-card span {
+  @apply block text-[10px] font-bold uppercase tracking-[0.1em] text-muted-foreground;
+}
+
+.metric-card strong {
+  @apply mt-1 block text-xs font-extrabold;
+}
+
+.status-pill {
+  @apply rounded-full px-3 py-1.5 text-[10px] font-extrabold tracking-[0.08em];
+}
+
+.status-active {
+  @apply bg-primary/10 text-primary;
+}
+
+.dashboard-card {
+  @apply rounded-3xl border border-border/70 bg-card p-5 shadow-[0_8px_30px_rgba(15,23,42,0.035)] md:p-6;
+}
+
+.nav-item {
+  @apply flex cursor-pointer items-center gap-2 rounded-xl px-3 py-2.5 text-sm font-bold text-muted-foreground transition hover:bg-muted hover:text-foreground;
+}
+
+.nav-item-active {
+  @apply bg-primary/10 text-primary;
+}
